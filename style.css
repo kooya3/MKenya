@@ -703,3 +703,9 @@ section{
     color: white;
     margin-bottom: 3%;
 }
+.card-gallery img{
+    margin: 2%;
+    vertical-align: top;
+    margin-block: 4%;
+    margin-inline: 5%;
+}
