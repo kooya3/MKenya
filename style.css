@@ -1,17 +1,20 @@
 
-:root{
-    --main-color:#d3ad7f;
-    --black:#13131a;
-    --bg:#010103;
-    --border:.1rem solid rgba(255,255,255,.3);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(2, 2, 2);
+}
 
+.section{
+    color: aliceblue;
 
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-   
+}
+.btn{
+    align-self: center;
+    color: aliceblue;
+    background: #FA5F1A;
+}
 
 .hero-section{
     width: 100%;
@@ -64,8 +67,8 @@
     margin-left: 0px;
 }
 .about{
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,11 +238,33 @@
     padding-top: 6%;
 }
 .carousel{
-    width: 80%;
+    width: 490px;
     margin-left: 10%;
+    float: center;
+}
+.carousel-inner{
+    transition-timing-function: cubic-bezier(0.87, -0.21, 0.58, 1);
+    width: 100%;
+    transition: 1.2s linear;
+    position: relative;
 }
 .carousel div img{
-    height: 500px;
+    height: 200px;
+    width: auto;
+
+}
+.carousel-indicators{
+    transition: all;
+    transition-property: 2s ease;
+
+}
+.carousel-item:active{
+    padding: unset;
+    margin: unset;
+    align-items: center;
+    justify-self: center;
+    appearance: range;
+
 }
 .carousel .carousel-caption{
     color: #FA5F1A;
@@ -435,12 +460,12 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
+}
 
 /* events section starts here */
 
- body{
+body {
         background-color: black;
-        background: rgba(0, 0, 0, 0.);
     }
     
     .container-row{
@@ -501,15 +526,19 @@ html{
 }
     .heading h1{
         color: white;
-        padding: 10px; 
+        padding: auto; 
         border: 2px solid #FA5F1A;
     }
 /* ft contact starts here */
-
+.contact{
+    color: whitesmoke;
+    font-size: large;
+}
 .box {
   width: 100%;
   height: 100vh;
-
+  gap: 30%;
+  font-size: 2.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -529,9 +558,6 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
 
-body{
-    background: var(--bg);
-}
 
 section{
     padding:2rem 7%;
@@ -585,3 +611,96 @@ section{
 }
 
 
+.about#about, h1.heading{
+    color: #FA5F1A;
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: 500;
+    width: fit-content;
+    align-self: flex-start;
+    
+}
+#gallery.container, .header parallax-zoom-blur{
+    color: white;
+    font-family: cursive;
+    font-size: large;
+    font-variant-ligatures: contextual;
+    
+}
+.herotext{
+    color: aliceblue;
+}
+.p-3 {
+    color: aliceblue;
+}
+.card-caption {
+    color: aliceblue;
+}
+.card-test.card-gallery{
+    justify-content: space-between;
+    top: 20%;
+    bottom: 30%;
+    width: fit-content;
+}
+.card-test.card-gallery>img{
+    height: 3rem;
+    width: 4rem;
+}
+/*.contained.gallery-container, h1{
+    font-size: 5.3rem;
+    color: #fff;
+}
+.container.gallery-container, p{
+    font-size: 2.3rem;
+    color: aliceblue;
+}*/
+.contained mt-5, .gallery-container.card-container#container2.card-test2{
+    gap: 20%;
+}
+.contact, img{
+        flex-flow: column-reverse;
+        flex-flow: wrap;
+        z-index: 2;
+        margin-right: 20px;
+        vertical-align: middle;
+        opacity: 8;
+        flex-direction: column;
+        object-fit: none;
+        object-position: right;
+        width: 3in;
+        size: 40%;
+}
+.cont, table tbody td:second-child{
+    color: aliceblue;
+    font-size: 3rem;
+    justify-content: left;
+}
+.cont, .emailinput{
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+}
+.footer{
+    display: flex;
+    gap: 5%;
+    justify-content: inherit;
+    text-align: justify;
+    justify-content: space-between;
+    float: center;
+    color: white;
+    padding-bottom: 4%;
+}
+.footer-line{
+    display: flex;
+    gap: 2.7%;
+    justify-content: inherit;
+    text-align: justify;
+    justify-content: space-between;
+    float: center;
+    color: white;
+    margin-bottom: 3%;
+}

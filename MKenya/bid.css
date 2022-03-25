@@ -28,6 +28,7 @@ h3 {
 
 h4 {
   font-size: 3rem;
+  color: azure;
 }
 
 p {
@@ -228,4 +229,17 @@ nav .order {
 .features .cards .card img {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+#bounce{
+  animation: bonce 3s infinite;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-duration: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  
 }
