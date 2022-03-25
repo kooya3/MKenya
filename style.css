@@ -527,7 +527,7 @@ body {
     .heading h1{
         color: white;
         padding: auto; 
-        border: 2px solid #FA5F1A;
+        border: 2px solid;
     }
 /* ft contact starts here */
 .contact{
